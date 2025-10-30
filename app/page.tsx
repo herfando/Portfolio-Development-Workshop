@@ -1,7 +1,9 @@
-const Home = () => {
-  return (
-    <div className='flex-center custom-container bg-red-400'>halo bro</div>
-  );
-};
+import Navbar from '@/app/home/parcials/navbar';
 
-export default Home;
+export default function Home() {
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
+}
