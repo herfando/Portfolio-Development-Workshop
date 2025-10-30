@@ -1,10 +1,15 @@
 {
+  // ⚙️ Default formatter & auto format
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+
+  // 🧠 Jalankan ESLint dan perbaiki otomatis saat save
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.addMissingImports": "explicit"
   },
+
+  // 💅 Konfigurasi Prettier
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
   "prettier.semi": true,
@@ -12,22 +17,46 @@
   "prettier.jsxSingleQuote": true,
   "prettier.trailingComma": "es5",
   "prettier.arrowParens": "always",
-  "[json]": {
+
+  // 💡 Formatter per bahasa
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // 🔧 Path TypeScript (biar VSCode pakai versi lokal dari node_modules)
   "typescript.tsdk": "node_modules/typescript/lib",
+
+  // 👁️ Sembunyikan file yang gak penting di Explorer
   "files.exclude": {
     "**/node_modules": true,
-    "next-env.d.ts": true,
-    "**/.vscode": true
+    "next-env.d.ts": true
+  },
+
+  // 🎨 Hindari error “unknown at rule” dari Tailwind atau CSS custom
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+
+  // 🌈 Opsional: tampilkan warna inline di editor
+  "editor.colorDecorators": true,
+
+  // 🧹 Auto remove import tidak terpakai
+  "editor.codeActionsOnSaveTimeout": 2000,
+
+  // 💬 Format file markdown juga
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
