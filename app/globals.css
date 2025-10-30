@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
-@config '../../tailwind.config.ts';
 
 @custom-variant dark (&:is(.dark *));
 /* start style design system figma */
@@ -234,11 +233,32 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 /* end style shadcn ui */
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-sm text-white;
+
+  font-family: var(--font-poppins);
+}
+
+@layer components {
+  .custom-container {
+    margin: 0 auto;
+    @apply max-w-302 pr-6 pl-6;
   }
-  body {
-    @apply bg-background text-foreground;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+  .flex-start {
+    @apply flex items-center justify-start;
   }
 }
