@@ -48,6 +48,7 @@
   "css.lint.unknownAtRules": "ignore",
   "scss.lint.unknownAtRules": "ignore",
   "less.lint.unknownAtRules": "ignore",
+  "css.lint.unknownProperties": "ignore",
 
   // 🌈 Opsional: tampilkan warna inline di editor
   "editor.colorDecorators": true,
