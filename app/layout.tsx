@@ -22,9 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={clsx(poppins.variable, 'antialiased')}>
-        {children}
-      </body>
+      <main>
+        <body className={clsx(poppins.variable, 'antialiased')}>
+          {children}
+        </body>
+      </main>
     </html>
   );
 }

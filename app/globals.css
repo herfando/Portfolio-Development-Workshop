@@ -244,8 +244,8 @@ body {
   font-family: var(--font-poppins);
 }
 
-@layer components {
-  .custom-container {
+@layer base {
+  main {
     margin: 0 auto;
     @apply max-w-302 pr-6 pl-6;
   }
